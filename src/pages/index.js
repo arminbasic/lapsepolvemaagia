@@ -5,7 +5,8 @@ const IndexPage = () => (
   <div>
 
     <h1>Hi people</h1>
-    
+
+
     <div id="Home" color="blue" >Home</div>
 
     <p>Welcome to your new Gatsby site.</p>
