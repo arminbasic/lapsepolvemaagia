@@ -5,6 +5,8 @@ import banner from './banner.jpg'
 console.log(banner);
 
 function Header(){
-    return <img src={banner} alt={"Logo"}/>;
+    return <Link to="/">
+      <img src={banner} alt={"Lapsepõlvemaagia poster"}/>
+    </Link>
 }
 export default Header
