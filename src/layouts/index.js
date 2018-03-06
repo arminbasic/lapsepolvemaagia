@@ -14,6 +14,9 @@ const TemplateWrapper = ({ children }) => (
       ]}
     />
     <Header />
+
+    
+
     <div
       style={{
         margin: '0 auto',
@@ -22,6 +25,7 @@ const TemplateWrapper = ({ children }) => (
         paddingTop: 0,
       }}
     >
+    
       {children()}
     </div>
   </div>
