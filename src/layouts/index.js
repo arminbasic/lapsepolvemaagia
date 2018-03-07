@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Header from '../components/Header'
+import MenuItem from '../components/MenuItem'
 
 const TemplateWrapper = ({ children }) => (
   <div>
@@ -15,8 +16,6 @@ const TemplateWrapper = ({ children }) => (
     />
     <Header />
 
-    
-
     <div
       style={{
         margin: '0 auto',
@@ -25,7 +24,27 @@ const TemplateWrapper = ({ children }) => (
         paddingTop: 0,
       }}
     >
-    
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'flex-end',
+          flexWrap: 'wrap', 
+          alignContent: 'space-between'
+        }}
+      >
+        <MenuItem>Avaleht</MenuItem>
+
+        <MenuItem>Ajakava</MenuItem>
+        
+        <MenuItem>Kauplejale</MenuItem>
+        
+        <MenuItem>Sipsiku ümbermaailmareis</MenuItem>
+        <MenuItem>Arhiiv</MenuItem>
+        <MenuItem>Mis on sinu vanavanemate nimed?</MenuItem>
+        <MenuItem>Toetajad</MenuItem>
+
+      </div>
+
       {children()}
     </div>
   </div>

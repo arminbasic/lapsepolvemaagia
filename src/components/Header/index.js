@@ -8,9 +8,5 @@ function Header(){
     return <Link to="/">
       <img src={banner} alt={"Lapsepõlvemaagia poster"}/>
     </Link>
-
-
-
-
 }
 export default Header
