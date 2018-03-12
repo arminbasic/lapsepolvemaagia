@@ -1,13 +1,13 @@
-import React from 'react';
-import { Route, IndexRoute } from 'react-router';
+import React from 'react'
+import { Route, IndexRoute } from 'react-router'
 
 /**
  * Import all page components here
  */
-import App from './components/App';
-import MainPage from './components/MainPage';
-import SomePage from './components/SomePage';
-import SomeOtherPage from './components/SomeOtherPage';
+import App from './components/App'
+import MainPage from './components/MainPage'
+import SomePage from './components/SomePage'
+import SomeOtherPage from './components/SomeOtherPage'
 
 /**
  * All routes go here.
@@ -19,4 +19,4 @@ export default (
     <Route path="/some/where" component={SomePage} />
     <Route path="/some/otherpage" component={SomeOtherPage} />
   </Route>
-);
+)

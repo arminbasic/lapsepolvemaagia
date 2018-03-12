@@ -27,36 +27,63 @@ const TemplateWrapper = ({ children }) => (
       <div
         style={{
           display: 'flex',
-          flexDirection:'row',
-          flexWrap:'nowrap',
+          flexDirection: 'row',
+          flexWrap: 'nowrap',
           alignItems: 'flex-end',
-          flexWrap: 'wrap', 
-          alignContent: 'space-between'
+          flexWrap: 'wrap',
+          alignContent: 'space-between',
         }}
       >
+        <MenuItem>
+          {' '}
+          <a style={{ color: 'white' }} href="/">
+            {' '}
+            Avaleht
+          </a>
+        </MenuItem>
 
-     
+        <MenuItem>
+          {' '}
+          <a style={{ color: 'white' }} href="/Ajakava/">
+            {' '}
+            Ajakava{' '}
+          </a>
+        </MenuItem>
 
-    
+        <MenuItem>
+          {' '}
+          <a style={{ color: 'white' }} href="/Kauplejale/">
+            {' '}
+            Kauplejale{' '}
+          </a>
+        </MenuItem>
 
-        
-        <MenuItem> <a style={{ color: 'white' }} href="/"> Avaleht</a></MenuItem>
-
-        <MenuItem> <a style={{ color: 'white' }} href="/Ajakava/"> Ajakava </a></MenuItem>
-        
-        <MenuItem> <a style={{ color: 'white' }} href="/Kauplejale/"> Kauplejale </a></MenuItem>
-        
-        <MenuItem><a style={{ color: 'white' }} href="/Sipsiku/"> Sipsiku ümbermaailmareis </a></MenuItem>
-        <MenuItem> <a style={{ color: 'white' }} href="/Arhiiv/"> Arhiiv</a></MenuItem>
-        <MenuItem><a style={{ color: 'white' }} href="/MisOnSinu/"> Mis on sinu vanavanemate nimed?</a></MenuItem>
-        <MenuItem> <a style={{ color: 'white' }} href="/Toetajad/"> Toetajad</a></MenuItem>
-
-
-
-
-
-
-
+        <MenuItem>
+          <a style={{ color: 'white' }} href="/Sipsiku/">
+            {' '}
+            Sipsiku ümbermaailmareis{' '}
+          </a>
+        </MenuItem>
+        <MenuItem>
+          {' '}
+          <a style={{ color: 'white' }} href="/Arhiiv/">
+            {' '}
+            Arhiiv
+          </a>
+        </MenuItem>
+        <MenuItem>
+          <a style={{ color: 'white' }} href="/MisOnSinu/">
+            {' '}
+            Mis on sinu vanavanemate nimed?
+          </a>
+        </MenuItem>
+        <MenuItem>
+          {' '}
+          <a style={{ color: 'white' }} href="/Toetajad/">
+            {' '}
+            Toetajad
+          </a>
+        </MenuItem>
       </div>
 
       {children()}
