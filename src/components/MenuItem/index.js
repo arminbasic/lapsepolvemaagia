@@ -5,16 +5,17 @@ import Link from 'gatsby-link'
 
 const MenuItem = ({ children }) => {
     return (
-        <Link to="/">
+        
             <div style={{ color: 'white',
                 backgroundColor: 'BlueViolet',
-                width:200,
+                width:130,
                 height:50,
                 textAlign:'center',
                 padding: '10 10 10 10',
-                border: '2px, solid black',
-                fontFamily:'"Lucida Sans Unicode", "Lucida Grande", sans-serif'                 
-                }}
+                borderStyle: 'double',
+                fontFamily:'"Lucida Sans Unicode", "Lucida Grande", sans-serif' ,    
+                         
+                }} 
             >
                 <div style= {{
                     
@@ -24,7 +25,7 @@ const MenuItem = ({ children }) => {
                 </div>
                
             </div>
-        </Link>
+       
     );
 }
 
