@@ -3,7 +3,8 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Header from '../components/Header'
-import MenuItem from '../components/MenuItem'
+import Menu from '../components/Menu'
+
 
 const TemplateWrapper = ({ children }) => (
   <div>
@@ -15,6 +16,7 @@ const TemplateWrapper = ({ children }) => (
       ]}
     />
     <Header />
+    <Menu />
 
     <div
       style={{
@@ -24,67 +26,7 @@ const TemplateWrapper = ({ children }) => (
         paddingTop: 0,
       }}
     >
-      <div
-        style={{
-          display: 'flex',
-          flexDirection: 'row',
-          flexWrap: 'nowrap',
-          alignItems: 'flex-end',
-          flexWrap: 'wrap',
-          alignContent: 'space-between',
-        }}
-      >
-        <MenuItem>
-          {' '}
-          <a style={{ color: 'white' }} href="/">
-            {' '}
-            Avaleht
-          </a>
-        </MenuItem>
-
-        <MenuItem>
-          {' '}
-          <a style={{ color: 'white' }} href="/Ajakava/">
-            {' '}
-            Ajakava{' '}
-          </a>
-        </MenuItem>
-
-        <MenuItem>
-          {' '}
-          <a style={{ color: 'white' }} href="/Kauplejale/">
-            {' '}
-            Kauplejale{' '}
-          </a>
-        </MenuItem>
-
-        <MenuItem>
-          <a style={{ color: 'white' }} href="/Sipsiku/">
-            {' '}
-            Sipsiku ümbermaailmareis{' '}
-          </a>
-        </MenuItem>
-        <MenuItem>
-          {' '}
-          <a style={{ color: 'white' }} href="/Arhiiv/">
-            {' '}
-            Arhiiv
-          </a>
-        </MenuItem>
-        <MenuItem>
-          <a style={{ color: 'white' }} href="/MisOnSinu/">
-            {' '}
-            Mis on sinu vanavanemate nimed?
-          </a>
-        </MenuItem>
-        <MenuItem>
-          {' '}
-          <a style={{ color: 'white' }} href="/Toetajad/">
-            {' '}
-            Toetajad
-          </a>
-        </MenuItem>
-      </div>
+      
 
       {children()}
     </div>
