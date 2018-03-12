@@ -1,5 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import { css } from 'emotion'
+
 import MenuItem from './menu-item'
 
 const MenuLink = (props) => (
@@ -12,7 +14,7 @@ const MenuLink = (props) => (
 
 export default (props) => 
     <div
-        style={{
+        className={css({
           width: '100%',
           display: 'flex',
           flexDirection: 'row',
@@ -20,7 +22,7 @@ export default (props) =>
           flexWrap: 'wrap',
           justifyContent: 'center',
           borderBottom: '5px solid lightblue'
-        }}
+        })}
       >
       
         <MenuLink to="/" >Avaleht</MenuLink>

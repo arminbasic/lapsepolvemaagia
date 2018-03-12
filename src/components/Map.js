@@ -20,7 +20,7 @@ export default props => (
 const InnerMap = withScriptjs(
   withGoogleMap(props => (
     <GoogleMap
-      defaultZoom={15}
+      defaultZoom={14}
       defaultCenter={{ lat: 58.9408503, lng: 23.5303353 }}
     >
       {props.isMarkerShown && (
