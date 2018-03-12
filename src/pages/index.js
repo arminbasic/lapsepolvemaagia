@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import Haapsalu from "../components/Map.js"
 
 const IndexPage = () => (
 
@@ -9,7 +10,9 @@ const IndexPage = () => (
 
     <h1>Hi people</h1>
 
-    <p>Now go build something great.</p>
+    <Haapsalu/>
+    
+
     <Link to="/page-2/">Go to page 2</Link>
 
 </div>
