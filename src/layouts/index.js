@@ -5,6 +5,7 @@ import { css } from 'emotion'
 
 import Header from '../components/Header'
 import Menu from '../components/Menu'
+import Footer from '../components/Footer'
 
 
 const TemplateWrapper = ({ children }) => (
@@ -27,7 +28,9 @@ const TemplateWrapper = ({ children }) => (
       })}
     >
       {children()}
+      <br/>
     </div>
+      <Footer/>
   </div>
 )
 
