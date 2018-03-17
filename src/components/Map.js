@@ -21,10 +21,10 @@ const InnerMap = withScriptjs(
   withGoogleMap(props => (
     <GoogleMap
       defaultZoom={14}
-      defaultCenter={{ lat: 58.9408503, lng: 23.5303353 }}
+      defaultCenter={{ lat: 58.94816969999999, lng: 23.53907730000003 }}
     >
       {props.isMarkerShown && (
-        <Marker position={{ lat: 58.9408503, lng: 23.5303353 }} />
+        <Marker position={{ lat: 58.94816969999999, lng: 23.53907730000003 }} />
       )}
     </GoogleMap>
   ))
