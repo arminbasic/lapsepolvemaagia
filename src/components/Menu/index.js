@@ -31,6 +31,6 @@ export default (props) =>
         <MenuLink to="/sipsik" >Sipsiku ümbermaailmareis</MenuLink>
         <MenuLink to="/arhiiv" >Arhiiv</MenuLink>
         <MenuLink to="/vanavanemad" >Mis on sinu vanavanemate nimed?</MenuLink>
-        <MenuLink to="/toetajad" >Toetajad</MenuLink>
+        <MenuLink to="/Toetajad" >Toetajad</MenuLink>
       </div>
 
