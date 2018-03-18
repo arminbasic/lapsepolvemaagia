@@ -36,6 +36,7 @@ const MenuLink = (props) => (
             padding: '1em 0',
             margin: '0',
             '@media (min-width: 1400px)': {
+                color: 'black',
                 background: 'none',
                 padding: '0 1em',
                 marginBottom: '1em',
