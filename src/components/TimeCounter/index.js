@@ -18,11 +18,13 @@ const BigBox = ({ children }) => (
       className={css({
         background: '#fef102',
         color: 'blue',
-        fontSize: '7em',
+        fontSize: '6vw',
         padding: '5%',
         textAlign: 'center',
         boxShadow: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)',
-
+        '& p': {
+            margin: 0,
+        }
       })}
     >
         { children }
@@ -32,14 +34,15 @@ const BigBox = ({ children }) => (
 
 class TimeCounter extends React.Component {
     componentDidMount() {
-        this.timer = setInterval(() => this.useStupidJS(), 1000)
+        this.useStupidJS()
+        this.timer = setInterval(() => this.useStupidJS(), 10000)
     }
     componentWillUnmount() {
         clearInterval(this.timer)
     }
     useStupidJS() {
         const days = getDaysLeft(this.props.untill)
-        document.getElementById('daysleft').innerHTML = '<p>' + days + ' days left</p>'
+        document.getElementById('daysleft').innerHTML = '<p>' + days + ' päeva festivalini</p>'
     }
     render() {
         return (

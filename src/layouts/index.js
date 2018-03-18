@@ -9,12 +9,13 @@ import Footer from '../components/Footer'
 
 
 const TemplateWrapper = ({ children }) => (
-  <div>
+  <div >
+
     <Helmet
       title="Lapsepolvemaagia"
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'Veebileht suvisele lapsepõlvemaagia festivalile' },
+        { name: 'keywords', content: 'lapsepõlv, maagia, festival, haapsalu, lapsepõlvemaagia' },
       ]}
     />
     <Header />
@@ -23,14 +24,15 @@ const TemplateWrapper = ({ children }) => (
     <div
       className={css({
         margin: '0 auto',
-        maxWidth: 960,
+        maxWidth: 1280,
         padding: '1rem 1.0875rem 1.45rem',
       })}
     >
       {children()}
       <br/>
     </div>
-      <Footer/>
+
+    <Footer />
   </div>
 )
 
