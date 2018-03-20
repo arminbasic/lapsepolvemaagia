@@ -18,7 +18,7 @@ const MenuLink = (props) => (
             '&:nth-child(3n+2)': {
                 background: '#0c004c',
             },
-            '@media (min-width: 1400px)': {
+            '@media (min-width: 1450px)': {
                 width: 'auto', 
                 background: 'none',
 
@@ -49,7 +49,7 @@ const MenuLink = (props) => (
             padding: '1em 0',
             margin: '0',
         
-            '@media (min-width: 1400px)': {
+            '@media (min-width: 1450px)': {
                 color: 'black',
                 background: 'none',
                 padding: '0 1vw',
@@ -80,7 +80,7 @@ export default (props) =>
           borderBottom: '5px solid #294C71',
           padding: '1rem 0',
 
-          '@media (min-width: 1400px)': {
+          '@media (min-width: 1450px)': {
             flexDirection: 'row',
           },
         })}

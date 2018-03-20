@@ -19,19 +19,20 @@ const FooterText = styled.h4({
 const AboutInformation = styled.div({
     display: 'flex',
     flexDirection: 'column',
-    flexwrap: 'wrap',
+    flexWrap: 'wrap',
 })
 
 function Footer() {
     return (
         <div className={css({
-            padding: '1em 20%',
-            width: '100%',
+            padding: '1em',
+            //width: '100%',
             display: 'flex',
             flexDirection: 'row',
             justifyContent: 'space-around',
             background: '#B5D135',
             borderTop: '5px solid #294C71',
+            flexWrap: 'wrap',
         })}>
             <AboutInformation>
                 <FooterText >Korraldaja: MTÜ Lugu</FooterText>
