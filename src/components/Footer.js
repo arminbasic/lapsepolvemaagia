@@ -4,8 +4,8 @@ import Link from 'gatsby-link'
 
 const FooterText = styled.h4({
     margin: '0.2em',
-    // color: '#bee0f7', 
-    '&:nth-child(3n)': {
+    color: '#294C71',
+    /*'&:nth-child(3n)': {
         color: '#efc9ca',
     },
     '&:nth-child(3n+1)': {
@@ -13,14 +13,15 @@ const FooterText = styled.h4({
     },
     '&:nth-child(3n+2)': {
         color: '#0c004c',
-    }
+    }*/
 })
 
 const AboutInformation = styled.div({
-    display: 'flex', 
-    flexDirection: 'column', 
+    display: 'flex',
+    flexDirection: 'column',
+    flexwrap: 'wrap',
 })
-    
+
 function Footer() {
     return (
         <div className={css({
@@ -29,17 +30,19 @@ function Footer() {
             display: 'flex',
             flexDirection: 'row',
             justifyContent: 'space-around',
-            background: '#103c6b',
-            borderTop: '5px solid #3cc57a',
+            background: '#B5D135',
+            borderTop: '5px solid #294C71',
         })}>
             <AboutInformation>
                 <FooterText >Korraldaja: MTÜ Lugu</FooterText>
                 <FooterText >Reg.nr. 80395538</FooterText>
                 <FooterText >IBAN EE741700017003849060</FooterText>
+            </AboutInformation>
+            <AboutInformation>
                 <FooterText >E-mail: haapsalulastefest@mail.ee</FooterText>
                 <FooterText >Tel. +372 52 14210</FooterText>
             </AboutInformation>
-            
+
             <Link to="/siseveeb" ><FooterText >Siseveeb</FooterText></Link>
         </div>
 
