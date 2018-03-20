@@ -14,31 +14,38 @@ function getTimeLeft(firstDate) {
     const days = Math.floor(difference / oneDay)
     const hours = Math.floor(difference / oneHour % 24)
     const minutes = Math.floor(difference / oneMinute % 60)
-    const seconds =  Math.floor(difference / oneSecond % 60) 
+    const seconds =  Math.floor(difference / oneSecond % 60)
     return {
-        days: days, 
-        hours: hours, 
-        minutes: minutes, 
-        seconds: seconds, 
+        days: days,
+        hours: hours,
+        minutes: minutes,
+        seconds: seconds,
     }
-  }
+}
 
 const BigBox = ({ children }) => (
     <div
-      className={css({
-        background: '#fef102',
-        color: 'blue',
-        fontSize: 'calc(20vw / 12 + 1.5rem)',
-        padding: '5%',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        boxShadow: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)',
-        '& p': {
-            margin: 0,
-        }
-      })}
+        className={css({
+            //background: '#fef102',
+            color: '#294C71',
+            fontSize: 'calc(40vw / 12)',
+            padding: '5%',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            flexDirection: 'column'
+            /*boxShadow: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)',
+            '& p': {
+                margin: 0,
+            }*/
+        })}
     >
+        <h2
+            className={css({
+                color: '#294C71'
+            })}>
+            Festivali alguseni on jäänud...
+        </h2>
         { children }
     </div>
 )
@@ -55,9 +62,9 @@ class TimeCounter extends React.Component {
     getOutputText() {
         const { days, hours, minutes, seconds } = getTimeLeft(this.props.untill)
         const strings = [days, hours, minutes, seconds]
-                        .map(n => "" + n) // to string
-                        .map(s => s.padStart(2, "0"))
-                        .join(":")
+            .map(n => "" + n) // to string
+            .map(s => s.padStart(2, "0"))
+            .join(":")
         return strings
     }
     useStupidJS() {
