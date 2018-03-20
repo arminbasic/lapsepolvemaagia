@@ -77,7 +77,7 @@ export default (props) =>
           alignItems: 'center',
           flexWrap: 'wrap',
           justifyContent: 'center',
-          borderBottom: '5px solid lightblue',
+          borderBottom: '5px solid #294C71',
           padding: '1rem 0',
 
           '@media (min-width: 1400px)': {
@@ -86,7 +86,7 @@ export default (props) =>
         })}
       >
       
-        <MenuLink to="/" >Avaleht</MenuLink>
+        <MenuLink to="/" >Lapsepõlvemaagia</MenuLink>
         <MenuLink to="/ajakava" >Ajakava</MenuLink>
         <MenuLink to="/kauplejale" >Kauplejale</MenuLink>
         <MenuLink to="/sipsik" >Sipsiku ümbermaailmareis</MenuLink>
