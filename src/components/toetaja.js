@@ -16,17 +16,17 @@ const Toetaja = (props) => (
                 borderRadius: '5px',
                 '&:hover': { // change these css attributes when sb hovers over the div
                     filter: 'brightness(95%)',
-                }
+                },
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+                flexDirection: 'column',
             })}
         >
             <h3>
                 {props.firmanimi}
             </h3>
-            <div className={css({ // hack to make the pictures seem almost at the center
-                position: 'relative',
-                top: '50%',
-                transform: 'translate(0, -57%)', 
-            })}>
+            <div >
                 
                 {props.logo}
             </div>
