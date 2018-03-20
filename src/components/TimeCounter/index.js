@@ -1,16 +1,26 @@
 import React from 'react'
 import { css } from 'emotion'
 
-function getDaysLeft(untill) {
-    var oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
-    var firstDate = untill || new Date(2018, 7, 11);
-    var secondDate = new Date();
-  
-    var diffDays = Math.round(
-      Math.abs((firstDate.getTime() - secondDate.getTime()) / oneDay)
-    )
-  
-    return diffDays
+function getTimeLeft(firstDate) {
+
+    const oneSecond = 1000
+    const oneMinute = 60 * oneSecond
+    const oneHour = 60 * oneMinute
+    const oneDay = 24 * oneHour // hours*minutes*seconds*milliseconds
+
+    const secondDate = new Date();
+    const difference = firstDate.getTime() - secondDate.getTime()
+
+    const days = Math.floor(difference / oneDay)
+    const hours = Math.floor(difference / oneHour % 24)
+    const minutes = Math.floor(difference / oneMinute % 60)
+    const seconds =  Math.floor(difference / oneSecond % 60) 
+    return {
+        days: days, 
+        hours: hours, 
+        minutes: minutes, 
+        seconds: seconds, 
+    }
   }
 
 const BigBox = ({ children }) => (
@@ -35,14 +45,18 @@ const BigBox = ({ children }) => (
 class TimeCounter extends React.Component {
     componentDidMount() {
         this.useStupidJS()
-        this.timer = setInterval(() => this.useStupidJS(), 10000)
+        this.timer = setInterval(() => this.useStupidJS(), 1000)
     }
     componentWillUnmount() {
         clearInterval(this.timer)
     }
     getOutputText() {
-        const days = getDaysLeft(this.props.untill)
-        return "" + days + " päeva festivalini"
+        const { days, hours, minutes, seconds } = getTimeLeft(this.props.untill)
+        const strings = [days, hours, minutes, seconds]
+                        .map(n => "" + n) // to string
+                        .map(s => s.padStart(2, "0"))
+                        .join(":")
+        return strings
     }
     useStupidJS() {
         const text = this.getOutputText()
