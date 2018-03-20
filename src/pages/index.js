@@ -5,19 +5,21 @@ import { css } from 'emotion'
 import HaapsaluMap from '../components/Map.js'
 import TimeCounter from '../components/TimeCounter'
 
-const IndexPage = () => ( // TODO, something here is fucked up, but it works atm
+const IndexPage = () => (
   <div className={ css(`
     display: grid;
-    grid-gap: 1rem;
+    grid-gap: 2vmax;
+    padding: 1vmax;
     grid-template-columns: 1fr;
     grid-template-areas: 
-      "map"
-      "box";
+      "box"
+      "map";
 
     @media (min-width: 500px) {
-      grid-template-columns: 1fr 2fr; 
+      grid-template-columns: repeat(3,minmax(20vw, auto));
+      grid-template-rows: minmax(20vw, auto);
       grid-template-areas:
-        "box map";
+        "box map map";
       
     }
   `
