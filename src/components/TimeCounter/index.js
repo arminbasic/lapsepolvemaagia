@@ -28,7 +28,7 @@ const BigBox = ({ children }) => (
       className={css({
         background: '#fef102',
         color: 'blue',
-        fontSize: 'calc(60vw / 12)',
+        fontSize: 'calc(40vw / 12)',
         padding: '5%',
         display: 'flex',
         justifyContent: 'center',
