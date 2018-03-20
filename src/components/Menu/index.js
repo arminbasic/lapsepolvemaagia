@@ -3,46 +3,61 @@ import Link from 'gatsby-link'
 import { css } from 'emotion'
 
 const MenuLink = (props) => (
-    <Link to={props.to} className={css({
-        width: '100%', 
-        textAlign: 'center' ,
+    <Link to={props.to} 
         
-        '&:nth-child(3n)': {
-            background: '#fdaf40',
-        },
-        '&:nth-child(3n+1)': {
-            background: '#f15252',
-        },
-        '&:nth-child(3n+2)': {
-            background: '#0c004c',
-        },
-        '@media (min-width: 1400px)': {
-            width: 'auto', 
-            background: 'none',
+        className={css({
+            width: '100%', 
+            textAlign: 'center' ,
+            
             '&:nth-child(3n)': {
-                background: 'none',
+                background: '#fdaf40',
             },
             '&:nth-child(3n+1)': {
-                background: 'none',
+                background: '#f15252',
             },
             '&:nth-child(3n+2)': {
+                background: '#0c004c',
+            },
+            '@media (min-width: 1400px)': {
+                width: 'auto', 
                 background: 'none',
+
+                '&:nth-child(3n)': {
+                    background: 'none',
+                },
+                '&:nth-child(3n+1)': {
+                    background: 'none',
+                },
+                '&:nth-child(3n+2)': {
+                    background: 'none',
+                }
+            },
+            
+        })}
+        
+        activeClassName={css({
+            '& h3': {
+                fontSize: '2em',
+                // lineHeight: '0.8em',
             }
-        },
-    })} >
+        })}
+        exact
+    >
         <h3 className={css({
             color: 'white',
             borderTop: '3px solid white',
             padding: '1em 0',
             margin: '0',
+        
             '@media (min-width: 1400px)': {
                 color: 'black',
                 background: 'none',
-                padding: '0 1em',
-                marginBottom: '1em',
+                padding: '0 1vw',
+                // marginBottom: '0em',
                 borderTop: '0 none white',
                 borderBottom: '0 none black',
                 borderRight: '3px solid tomato', // just for you, Ida
+                
                 // ':last-child': {
                 //     borderRight: '3px none tomato',
                 // }
@@ -62,12 +77,12 @@ export default (props) =>
           alignItems: 'center',
           flexWrap: 'wrap',
           justifyContent: 'center',
-          alignItems: 'center',
           borderBottom: '5px solid lightblue',
+          padding: '1rem 0',
 
           '@media (min-width: 1400px)': {
             flexDirection: 'row',
-          }
+          },
         })}
       >
       
