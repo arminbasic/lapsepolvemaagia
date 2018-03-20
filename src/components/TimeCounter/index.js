@@ -40,9 +40,13 @@ class TimeCounter extends React.Component {
     componentWillUnmount() {
         clearInterval(this.timer)
     }
-    useStupidJS() {
+    getOutputText() {
         const days = getDaysLeft(this.props.untill)
-        document.getElementById('daysleft').innerHTML = '<p>' + days + ' päeva festivalini</p>'
+        return "" + days + " päeva festivalini"
+    }
+    useStupidJS() {
+        const text = this.getOutputText()
+        document.getElementById('daysleft').innerHTML = '<p>' + text + '</p>'
     }
     render() {
         return (
