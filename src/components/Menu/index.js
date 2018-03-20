@@ -40,6 +40,7 @@ const MenuLink = (props) => (
                 background: 'none',
                 padding: '0 1em',
                 marginBottom: '1em',
+                borderTop: '0 none white',
                 borderBottom: '0 none black',
                 borderRight: '3px solid tomato', // just for you, Ida
                 // ':last-child': {
