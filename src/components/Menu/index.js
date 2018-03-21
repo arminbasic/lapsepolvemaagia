@@ -9,26 +9,52 @@ const MenuLink = (props) => (
             width: '100%', 
             textAlign: 'center' ,
             
-            '&:nth-child(3n)': {
-                background: '#fdaf40',
+            '&:nth-child(1)': {
+                background: '#85C1E9',
             },
-            '&:nth-child(3n+1)': {
-                background: '#f15252',
+            '&:nth-child(2)': {
+                background: '#AED6F1',
             },
-            '&:nth-child(3n+2)': {
-                background: '#0c004c',
+            '&:nth-child(3)': {
+                background: '#D6EAF8',
             },
+            '&:nth-child(4)': {
+                background: '#EBF5FB',
+            },
+            '&:nth-child(5)': {
+                background: '#D6EAF8',
+            },
+            '&:nth-child(6)': {
+                background: '#AED6F1',
+            },
+            '&:nth-child(7)': {
+                background: '#85C1E9',
+            },
+            
+            
             '@media (min-width: 1450px)': {
                 width: 'auto', 
                 background: 'none',
 
-                '&:nth-child(3n)': {
+                '&:nth-child(1)': {
                     background: 'none',
                 },
-                '&:nth-child(3n+1)': {
+                '&:nth-child(2)': {
                     background: 'none',
                 },
-                '&:nth-child(3n+2)': {
+                '&:nth-child(3)': {
+                    background: 'none',
+                },
+                '&:nth-child(4)': {
+                    background: 'none',
+                },
+                '&:nth-child(5)': {
+                    background: 'none',
+                },
+                '&:nth-child(6)': {
+                    background: 'none',
+                },
+                '&:nth-child(7)': {
                     background: 'none',
                 }
             },
@@ -44,7 +70,7 @@ const MenuLink = (props) => (
         exact
     >
         <h3 className={css({
-            color: 'white',
+            color: '#294C71',
             borderTop: '3px solid white',
             padding: '1em 0',
             margin: '0',
