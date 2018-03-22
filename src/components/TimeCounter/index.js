@@ -26,7 +26,7 @@ function getTimeLeft(firstDate) {
 const BigBox = ({ children }) => (
     <div
         className={css({
-            //background: '#fef102',
+            background: '#FEF105',
             color: '#294C71',
             fontSize: 'calc(40vw / 12)',
             padding: '5%',
