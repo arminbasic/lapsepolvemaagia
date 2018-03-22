@@ -7,15 +7,19 @@ import Header from '../components/Header'
 import Menu from '../components/Menu'
 import Footer from '../components/Footer'
 
-
 const TemplateWrapper = ({ children }) => (
-  <div >
-
+  <div>
     <Helmet
       title="Lapsepolvemaagia"
       meta={[
-        { name: 'description', content: 'Veebileht suvisele lapsepõlvemaagia festivalile' },
-        { name: 'keywords', content: 'lapsepõlv, maagia, festival, haapsalu, lapsepõlvemaagia' },
+        {
+          name: 'description',
+          content: 'Veebileht suvisele lapsepõlvemaagia festivalile',
+        },
+        {
+          name: 'keywords',
+          content: 'lapsepõlv, maagia, festival, haapsalu, lapsepõlvemaagia',
+        },
       ]}
     />
     <Header />
@@ -29,7 +33,7 @@ const TemplateWrapper = ({ children }) => (
       })}
     >
       {children()}
-      <br/>
+      <br />
     </div>
 
     <Footer />
